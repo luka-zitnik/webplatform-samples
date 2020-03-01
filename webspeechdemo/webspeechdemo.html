@@ -257,7 +257,7 @@ if (!('webkitSpeechRecognition' in window)) {
     }
   };
 
-  recognition.onend = function() {
+  recognition.onaudioend = function() {
     recognizing = false;
     if (ignore_onend) {
       return;
